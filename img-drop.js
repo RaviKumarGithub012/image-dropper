@@ -35,7 +35,7 @@ $.fn.ImgDrop = function (option) {
     for (let i = 0; i < files.length; i++) {
       const FR = new FileReader();
       FR.onload = function (e) {
-        $file.find('.dropzone-img').append('<div class="dropzone-img-completed"><img src=' + e.target.result + ' /><!--span class="delete-img">X</span--></div>');
+        $file.find('.dropzone-img').append('<div class="dropzone-img-completed"><img src=' + e.target.result + ' /><span class="delete-img">X</span></div>');
         SetDropSize(6);
         $file.find('.dropzone-label').addClass('dropped');
       }
